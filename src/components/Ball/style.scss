@@ -1,0 +1,31 @@
+.ball {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: black;
+  border-radius: 50%;
+  height: 40rem;
+  width: 40rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.ball--white {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  border-radius: 50%;
+  height: 20rem;
+  width: 20rem;
+}
+
+.eight {
+  align-self: center;
+  font-size: 15rem;
+
+}

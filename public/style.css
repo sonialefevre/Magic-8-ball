@@ -1,0 +1,66 @@
+body {
+  background-color: antiquewhite;
+  align-content: center;
+}
+
+.header {
+  background-image: url('https://tinyurl.com/2cnmau2m');
+  opacity: 0.5;
+  display: flex;
+  justify-content: center;
+  min-height: 10rem;
+}
+
+form {
+  opacity: 1;
+  align-self: center;
+}
+
+.questionSubmit {
+  padding: 0.5rem;
+  opacity: 1.5;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.questionInput {
+  padding: 0.5rem;
+  opacity: 1.5;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+
+.ball {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: black;
+  border-radius: 50%;
+  height: 40rem;
+  width: 40rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.ball--white {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  border-radius: 50%;
+  height: 20rem;
+  width: 20rem;
+}
+
+.eight {
+  align-self: center;
+  font-size: 15rem;
+
+}
