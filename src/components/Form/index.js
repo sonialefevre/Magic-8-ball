@@ -11,6 +11,7 @@ const Form = ({ inputValue, onChangeInput, submitResponse }) => {
   const handleSubmit = (event) => {
     event.preventDefault();
     submitResponse(inputValue);
+    onChangeInput('');
   };
 
   return (

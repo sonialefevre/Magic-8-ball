@@ -3,7 +3,12 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: black;
+  background:
+  radial-gradient(
+    circle at 80% 30%,
+    rgb(112, 112, 112),
+   black
+  );
   border-radius: 50%;
   height: 40rem;
   width: 40rem;
@@ -18,7 +23,11 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: white;
+  background: 
+  radial-gradient(circle at 80% 30%,
+  white,
+  rgb(168, 168, 168),
+  );
   border-radius: 50%;
   height: 20rem;
   width: 20rem;
@@ -27,5 +36,31 @@
 .eight {
   align-self: center;
   font-size: 15rem;
+  transition: 2s;
 
+}
+
+.shadow {
+  width: 600px;
+  height: 50px;
+  background:
+    radial-gradient(
+      #000f,
+      #fff0 72%
+    );
+  border-radius: 50%;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.answer {
+  font-size: 2em;
+  transition: ease-in-out 2s;
+
+}
+
+.eight--hidden { 
+  transition: 2s;
+  display: none;
 }
