@@ -1,3 +1,9 @@
+.ballContainer {
+  width: 100vw;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 .ball {
   display: flex;
   flex-direction: column;
@@ -63,4 +69,28 @@
 .eight--hidden { 
   transition: 2s;
   display: none;
+}
+
+@media only screen and (min-width: 400px) {
+  .ball-container .ball {
+    zoom: .3;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .ball-container .ball {
+    zoom: .6;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .ball-container .ball {
+    zoom: .7;        
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .ball-container .ball {
+    zoom: 1;
+  }
 }

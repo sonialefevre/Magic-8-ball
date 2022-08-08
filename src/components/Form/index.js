@@ -15,9 +15,15 @@ const Form = ({ inputValue, onChangeInput, submitResponse }) => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form className="animate__animated animate__slideInDown" onSubmit={handleSubmit}>
       <input className="questionInput" value={inputValue} type="text" onChange={handleChange} placeholder="Will this website bug?" />
-      <button className="questionSubmit" type="submit">Ask your question</button>
+      <button className="questionSubmit pushable" type="submit">
+        <span className="shadow" />
+        <span className="edge" />
+        <span className="front">
+          Ask your question
+        </span>
+      </button>
     </form>
   );
 };

@@ -10,7 +10,13 @@ const Reload = ({ setAnswerDisplayed }) => {
 
   return (
     <form>
-      <button className="questionSubmit" type="submit" onSubmit={handleSubmitReload}>Ask again!</button>
+      <button className="questionSubmit pushable" type="submit" onSubmit={handleSubmitReload}>
+        <span className="shadow" />
+        <span className="edge" />
+        <span className="front">
+          Ask again!
+        </span>
+      </button>
     </form>
   );
 };

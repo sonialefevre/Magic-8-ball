@@ -41,17 +41,26 @@ const App = () => {
   return (
     <div className="app">
       <Header
-        value={inputValue}
+        classname="container"
+        inputValue={inputValue}
         onChangeInput={setInputValue}
         submitResponse={handleSubmit}
         answerDisplayed={answerDisplayed}
         setAnswerDisplayed={setAnswerDisplayed}
       />
       {answerDisplayed && (
-        <Question answerDisplayed={answerDisplayed} question={question} />
+        <Question
+          className="container"
+          answerDisplayed={answerDisplayed}
+          question={question}
+        />
       )}
 
-      <Ball answerDisplayed={answerDisplayed} toDisplay={toDisplay.label} />
+      <Ball
+        classname="container"
+        answerDisplayed={answerDisplayed}
+        toDisplay={toDisplay.label}
+      />
     </div>
 
   );

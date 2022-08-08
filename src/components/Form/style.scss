@@ -3,29 +3,114 @@ form {
   align-self: center;
 }
 
-.questionSubmit {
-  padding: 1rem;
-  opacity: 1.5;
-  border: none;
-  border-radius: 5px;
-  font-size: 2rem;
-}
+// .questionSubmit {
+//   padding: 1rem;
+//   opacity: 1.5;
+//   border: none;
+//   border-radius: 5px;
+//   font-size: 2rem;
+// }
 
-.questionSubmit:hover {
-  background-color: rgb(116, 116, 116);
-  color: white;
-  padding: 1.1rem;
-  transition: .5s;
-}
+// .questionSubmit:hover {
+//   background-color: rgb(116, 116, 116);
+//   color: white;
+//   padding: 1.1rem;
+//   transition: .5s;
+// }
 
 .questionInput {
-  padding: 1rem;
+  position: relative;
+  top: 2px;
+  background-color:rgb(255, 236, 209);
+  padding: 0.95rem;
   opacity: 1.5;
   border: none;
   border-radius: 5px;
   font-size: 1rem;
   margin-right: 0.5em;
   font-size: 2rem;
+}
+
+.pushable {
+  position: relative;
+  border: none;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+  outline-offset: 4px;
+  transition: filter 250ms;
+}
+.shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  background: hsl(0deg 0% 0% / 0.25);
+  will-change: transform;
+  transform: translateY(2px);
+  transition:
+    transform
+    600ms
+    cubic-bezier(.3, .7, .4, 1);
+}
+.edge {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  background: linear-gradient(
+    to left,
+    rgb(233, 152, 60) 0%,
+    rgb(255, 210, 143) 8%,
+    rgb(255, 224, 177) 8%,
+    rgb(231, 141, 38) 0%,)
+}
+.front {
+  display: block;
+  position: relative;
+  padding: 1.4rem;
+  border-radius: 12px;
+  font-size: 1.25rem;
+  color: white;
+  background: rgb(255, 242, 224);
+  will-change: transform;
+  transform: translateY(-4px);
+  transition:
+    transform
+    600ms
+    cubic-bezier(.3, .7, .4, 1);
+}
+.pushable:hover {
+  filter: brightness(110%);
+}
+.pushable:hover .front {
+  transform: translateY(-6px);
+  transition:
+    transform
+    250ms
+    cubic-bezier(.3, .7, .4, 1.5);
+}
+.pushable:active .front {
+  transform: translateY(-2px);
+  transition: transform 34ms;
+}
+.pushable:hover .shadow {
+  transform: translateY(4px);
+  transition:
+    transform
+    250ms
+    cubic-bezier(.3, .7, .4, 1.5);
+}
+.pushable:active .shadow {
+  transform: translateY(1px);
+  transition: transform 34ms;
+}
+.pushable:focus:not(:focus-visible) {
+  outline: none;
 }
 
 .hidden {

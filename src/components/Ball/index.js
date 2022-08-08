@@ -5,15 +5,15 @@ import 'animate.css';
 const Ball = ({ answerDisplayed, toDisplay }) => {
 
   return (
-    <main>
-      <div className="ball">
-        <div className="ball--white">
-          <div className={!answerDisplayed ? 'eight' : 'eight--hidden'}>8</div>
+    <main className="ballContainer">
+      <div className="ball animate__animated animate__wobble">
+        <div className="ball--white ">
+          <div className={!answerDisplayed ? 'eight animate__animated animate__bounceIn' : 'eight--hidden animate__animated__bounceOut'}>8</div>
           {answerDisplayed && (
-            <div className="answer animate__animated animate__bounceIn ">{toDisplay}</div>) }
+            <div className="answer animate__animated animate__rubberBand ">{toDisplay}</div>) }
         </div>
       </div>
-      <div className="shadow" />
+      <div className="shadow animate__animated animate__wobble" />
     </main>
   );
 };

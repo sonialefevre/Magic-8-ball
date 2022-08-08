@@ -1,7 +1,14 @@
-.question__container {
-  background-color: rgba(248, 231, 209, 0.849);
+.questionContainer {
+  background: rgb(250,235,215);
+  background: linear-gradient(90deg, rgba(250,235,215,1) 8%, rgb(160, 138, 114) 53%, rgba(250,235,215,1) 92%);
+  color: white;
   margin: 1em;
   font-size: 2em;
+  font-weight: bold;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 1.5rem;
+
 
 }
 

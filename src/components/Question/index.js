@@ -5,8 +5,8 @@ import './style.scss';
 const Question = ({ answerDisplayed, question }) => {
 
   return (
-    <div className={answerDisplayed ? 'question__container' : 'hidden'}>
-      <div className="question__content"> You asked: {question}</div>
+    <div className={answerDisplayed ? 'questionContainer animate__animated animate__fadeIn' : 'hidden'}>
+      <div className="questionContent"> You asked: {question}</div>
     </div>
   );
 };
