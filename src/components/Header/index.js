@@ -1,12 +1,29 @@
 import PropTypes from 'prop-types';
 import Form from '../Form';
+import Reload from '../Reload';
 import './style.scss';
 
-const Header = ({ inputValue, onChangeInput, submitResponse }) => {
+const Header = ({
+  answerDisplayed,
+  setAnswerDisplayed,
+  inputValue,
+  onChangeInput,
+  submitResponse }) => {
 
   return (
     <header className="header">
-      <Form inputValue={inputValue} submitResponse={submitResponse} onChangeInput={onChangeInput} />
+      { !answerDisplayed
+      && (
+      <Form
+        inputValue={inputValue}
+        submitResponse={submitResponse}
+        onChangeInput={onChangeInput}
+      />
+      )}
+
+      {answerDisplayed
+      && <Reload setAnswerDisplayed={setAnswerDisplayed} />}
+
     </header>
   );
 
@@ -18,4 +35,6 @@ Header.propTypes = {
   inputValue: PropTypes.string.isRequired,
   onChangeInput: PropTypes.func.isRequired,
   submitResponse: PropTypes.func.isRequired,
+  answerDisplayed: PropTypes.bool.isRequired,
+  setAnswerDisplayed: PropTypes.func.isRequired,
 };

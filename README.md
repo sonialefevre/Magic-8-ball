@@ -2,9 +2,11 @@
 
 Little personnal project to make a digital magic 8-ball using Reactjs.
 
-## TO-DO:
-- Add CSS transitions
-  (Ideally answer to be displayed in a blue triangle that would spinn a few times before easing-in the answer)
+## TO-DO
+
+- Clear input field on submit
+
+- Add CSS transitions (ideally answer to be displayed in a blue triangle that would spinn a few times before easing-in the answer)
 
 - Deal with the input field size depending on user's input size
 

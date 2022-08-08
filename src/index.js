@@ -1,5 +1,6 @@
 // == Import : npm
 import { createRoot } from 'react-dom/client';
+import 'semantic-ui-css/semantic.min.css';
 
 // == Import : local
 // Composants
