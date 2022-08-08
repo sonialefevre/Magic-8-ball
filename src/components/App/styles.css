@@ -59,42 +59,171 @@ body {
   }
   
   /* Smartphones (landscape) ----------- */
-  @media only screen and (min-width : 321px) {
-  /* Styles */
-  }
+  @media only screen and (min-width : 650px) {
+    .app {
+      overflow:hidden;
+      min-height: 100vh;
+    }
   
-  /* Smartphones (portrait) ----------- */
-  @media only screen and (max-width : 320px) {
-  /* Styles */
-  }
+    .header {
+      zoom: .6;
+    }
   
+    .ballContainer {
+      position: absolute;
+      top: 50px;
+      left: 10px;
+    }
+  
+    .ball {
+      height: 18rem;
+      width: 18rem;
+    }
+  
+    .ball--white {
+      height: 9.5rem;
+      width: 9.5rem;
+    }
+  
+    .eight {
+      font-size: 7rem;
+    }
+  
+    .answer {
+      font-size: 1.3rem;
+    }
+  
+    .shadow {
+      width: 200px;
+      height: 25px;
+    }
+  
+    .questionContainer {
+      margin: none;
+      position: absolute;
+      left: 1em;
+      max-width: 30rem;
+    }
+  
+    .questionContent {
+      font-size: 0.5em;
+    }
+  }
+    
   /* iPads (portrait and landscape) ----------- */
   @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
-  /* Styles */
+    .app {
+      overflow:hidden;
+    }
+
+    .header {
+      zoom: 1;
+    }
+
+    .front {
+      font-size: 1.7em;
+    }
+
+    .ballContainer {
+      position:relative;
+    }
+  
+    .ball {
+      height: 30rem;
+      width: 30rem;
+    }
+  
+    .ball--white {
+      height: 16rem;
+      width: 16rem;
+    }
+  
+    .eight {
+      font-size: 10rem;
+    }
+  
+    .answer {
+      font-size: 1.8rem;
+    }
+  
+    .shadow {
+      width: 300px;
+      height: 100px;
+    }
+  
+    .questionContainer {
+      position: relative;
+      max-width: 30rem;
+    }
+  
+    .questionContent {
+      font-size: 0.8em;
+    }
   }
   
   /* iPads (landscape) ----------- */
   @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
-  /* Styles */
+  .questionContainer {
+    position: absolute;
+    min-width: 20rem;
   }
-  
-  /* iPads (portrait) ----------- */
-  @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
-  /* Styles */
+
+  .shadow {
+    position: absolute;
+    top: 30em;
+    left: 25em;
   }
-  /**********
-  iPad 3
-  **********/
-  @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 2) {
-  /* Styles */
-  }
-  
-  @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
-  /* Styles */
+
   }
   /* Desktops and laptops ----------- */
   @media only screen and (min-width : 1224px) {
-  /* Styles */
+
+  .header {
+    zoom: 1;
+  }
+  .questionContainer {
+    position: relative;
+  }
+
+  .ballContainer {
+    position: relative;
+  }
+
+  .ball {
+    height: 35rem;
+    width: 35rem;
+  }
+
+  .ball--white {
+    height: 18rem;
+    width: 18rem;
+  }
+
+  .eight {
+    font-size: 12rem;
+  }
+
+  .shadow {
+    width: 400px;
+    height: 50px;
+  }
+
+  .questionContainer {
+    min-width: 40rem;
+    text-align: center;
+  }
+
+  .questionContent {
+    font-size: 2rem;
+  }
+
+  .answer {
+    font-size: 2rem;
+  }
+
+  .front {
+    font-size: 1.5em;
+  }
   }
   
   /* Large screens ----------- */
