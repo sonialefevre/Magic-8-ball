@@ -2,21 +2,14 @@
 
 Little personnal project to make a digital magic 8-ball using Reactjs.
 
+Visit http://magic8ball-project.surge.sh to check result!
+
 ## TO-DO
 
-- Clear input field on submit
+- Correct last PropTypes errors
+- Finish media queries for missing formats for Satan's minions who use foldable phones or tablets
 
-- Add CSS transitions (ideally answer to be displayed in a blue triangle that would spinn a few times before easing-in the answer)
-
-- Deal with the input field size depending on user's input size
-
-- Display question asked upon submit (maybe manage questions through a state? Seems overkill but possible troubleshooting...)
-
-- Correct wrong proptyped (or switch to Redux?)
-
-- Generally make it prettier (use a CSS framework because CSS is the devil's language?)
-
-## TO-DO if I ever manage to make all of the above
+## TO-DO if I ever manage to make all of the above (aka V2)
 
 - Try and deal none yes-no questions through Regex ?
 
